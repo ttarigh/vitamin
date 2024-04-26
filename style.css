@@ -1,0 +1,22 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px; /* Adjust spacing between checkbox and label text */
+  }
+  
+  input[type="submit"] {
+    width: 150px; /* Adjust width as desired */
+  }
