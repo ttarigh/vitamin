@@ -3,7 +3,6 @@ body {
   }
   
   form {
-    display: flex;
     flex-direction: column;
   }
   
@@ -19,4 +18,25 @@ body {
   
   input[type="submit"] {
     width: 150px; /* Adjust width as desired */
+  }
+
+  .column {
+    /* Set the width for each column */
+    width: 20%;
+    /* Allow columns to float next to each other */
+    float: left;
+    /* Add some margin for spacing between columns */
+    margin: 10px;
+    /* Remove default margins for checkboxes */
+    margin-bottom: 0;
+  }
+
+  .column label {
+    display: block; /* Make checkboxes behave like block elements */
+    margin-bottom: 5px;  /* Add some space between checkboxes */
+  }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
   }
