@@ -4,13 +4,20 @@ const sub = document.getElementById("submitButton");
 const resetButton = document.getElementById("resetButton");
 
 form.addEventListener("submit", (event) => {
+
   event.preventDefault(); // Prevent default form submission
-  sub.style.display = "none";
-  document.body.style.backgroundColor = "blue";
-  document.body.style.color = "blue";
 
   const checkedBoxes = form.querySelectorAll('input[type="checkbox"]:checked');
 
+  if (checkedBoxes.length === 0) {
+    event.preventDefault(); // Prevent submission if none are checked
+    alert("Please select at least one manifestation. Or 10 if you value your life.");
+    return; // Exit the function if no checkboxes are checked
+  }
+
+  sub.style.display = "none";
+  document.body.style.backgroundColor = "blue";
+  document.body.style.color = "blue";
   const allCheckboxes = form.querySelectorAll('input[type="checkbox"]');
       allCheckboxes.forEach((box) => {
         if (!box.checked) {

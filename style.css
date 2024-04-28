@@ -20,8 +20,12 @@ body {
   
   input[type="submit"] {
     width: 150px; /* Adjust width as desired */
+    font-family: Rockwell Extra Bold,Rockwell Bold,monospace;
   }
 
+  #submitButton{
+    cursor: pointer;
+  }
   .column {
     /* Set the width for each column */
     width: 18%;
