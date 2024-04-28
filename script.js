@@ -4,6 +4,8 @@ const sub = document.getElementById("submitButton");
 const resetButton = document.getElementById("resetButton");
 
 form.addEventListener("submit", (event) => {
+  localStorage.setItem("manifestSelected", true);
+
 
   event.preventDefault(); // Prevent default form submission
 
