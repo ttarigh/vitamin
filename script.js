@@ -51,7 +51,7 @@ form.addEventListener("submit", (event) => {
       audio.pause();
       checkbox.checked = false;
       resetButton.click();
-    }, 6 * 1000); // 60 seconds * 1000 milliseconds
+    }, 30 * 1000); // 60 seconds * 1000 milliseconds
   });
 });
 
